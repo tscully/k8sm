@@ -1,0 +1,16 @@
+gcloud compute instances create control-plane --zone=europe-west1-b \
+--machine-type=e2-medium \
+--network-interface ''  \
+--network-interface subnet=telco-1,no-address  \
+--image=ubuntu-2104-hirsute-v20210707 \
+--image-project=ubuntu-os-cloud \
+--boot-disk-size=50GB 
+
+gcloud compute instances create node01 --zone=europe-west1-b \
+--machine-type=e2-medium \
+--network-interface ''  \
+--network-interface subnet=telco-1,no-address  \
+--image=ubuntu-2104-hirsute-v20210707 \
+--image-project=ubuntu-os-cloud \
+--boot-disk-size=50GB
+
