@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Source: http://kubernetes.io/docs/getting-started-guides/kubeadm/
+# adding this as a test
 
 ### setup terminal
 ### new line 
